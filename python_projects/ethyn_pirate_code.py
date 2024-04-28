@@ -12,6 +12,6 @@ def convert_substrings(input_string, substitution_dict):
 
 # Example usage:
 input_string = "Syol Faer, unlike traditional reth disciplines, defies Tel' structured laws siilen govern other mystic arts. It draws teague Tel' unpredictable energies Ath Tel' cosmos, intertwining ausa Tel' very essence Ath syol. Thas who dare lor nae wield it akh tread cautiously, nesh Tel' threads fae sen weave are e delicate e fae sen are volatile"
-substitution_dict = {"Tel'": "the", "Ath": "of", "aul": "in"}
+substitution_dict = {"Tel'": "the", "Ath": "of", "aul": "in", "Syol": "Chaos", "Faer":"magic"}
 output_string = convert_substrings(input_string, substitution_dict)
 print(output_string + "\n")
