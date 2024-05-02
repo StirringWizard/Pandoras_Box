@@ -66,6 +66,9 @@ class AttendanceSystem:
             print("Error:", e)
             self.attendance_data = None
     
+    def open_file(self):
+        self.browse_file()
+    
     def search(self):
         if self.attendance_data is not None:
             query = self.search_entry.get()
