@@ -10,9 +10,9 @@ class MainMenu(App):
         main_layout = FloatLayout()
 
         # Main menu buttons
-        btn_new_game = Button(text='New Game', size_hint=(None, None), size=(200, 50), pos_hint={'center_x': 0.5, 'center_y': 0.6})
-        btn_options = Button(text='Options', size_hint=(None, None), size=(200, 50), pos_hint={'center_x': 0.5, 'center_y': 0.5})
-        btn_exit = Button(text='Exit', size_hint=(None, None), size=(200, 50), pos_hint={'center_x': 0.5, 'center_y': 0.4})
+        btn_new_game = Button(text='New Game', size_hint=(None, None), size=(200, 50), pos_hint={'x': 0, 'top': 1})
+        btn_options = Button(text='Options', size_hint=(None, None), size=(200, 50), pos_hint={'x': 0, 'top': 0.9})
+        btn_exit = Button(text='Exit', size_hint=(None, None), size=(200, 50), pos_hint={'x': 0, 'top': 0.8})
 
         # Bind button events
         btn_new_game.bind(on_release=self.start_game)
