@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Capabilities Example</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Capabilities Demonstration</h1>
+        <nav>
+            <ul>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Text Elements -->
+        <section id="text">
+            <h2>Text Elements</h2>
+            <p>This is a paragraph. Paragraphs are block-level elements and can contain <strong>strong text</strong>, <em>emphasized text</em>, and <a href="#">links</a>.</p>
+            <p>You can also include <small>small text</small>, <mark>highlighted text</mark>, and <del>deleted text</del>.</p>
+            <blockquote>
+                <p>This is a blockquote. Blockquotes are used to denote quotations from other sources.</p>
+            </blockquote>
+            <pre>
+                This is preformatted text.
+                It preserves spaces and line breaks.
+            </pre>
+            <code>
+                &lt;div&gt;This is an example of code element&lt;/div&gt;
+            </code>
+        </section>
+        
+        <!-- Links -->
+        <section id="links">
+            <h2>Links</h2>
+            <p><a href="https://www.example.com" target="_blank">External Link</a></p>
+            <p><a href="#text">Internal Link</a></p>
+            <p><a href="mailto:someone@example.com">Email Link</a></p>
+        </section>
+        
+        <!-- Images -->
+        <section id="images">
+            <h2>Images</h2>
+            <p><img src="https://via.placeholder.com/150" alt="Placeholder Image"></p>
+            <p><img src="https://via.placeholder.com/150" alt="Placeholder Image" width="100" height="100"></p>
+            <p><figure>
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                <figcaption>Figure caption</figcaption>
+            </figure></p>
+        </section>
+        
+        <!-- Lists -->
+        <section id="lists">
+            <h2>Lists</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2
+                    <ul>
+                        <li>Nested list item 1</li>
+                        <li>Nested list item 2</li>
+                    </ul>
+                </li>
+                <li>List item 3</li>
+            </ul>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ol>
+            <h3>Description List</h3>
+            <dl>
+                <dt>Term 1</dt>
+                <dd>Description 1</dd>
+                <dt>Term 2</dt>
+                <dd>Description 2</dd>
+            </dl>
+        </section>
+        
+        <!-- Tables -->
+        <section id="tables">
+            <h2>Tables</h2>
+            <table border="1">
+                <caption>Table Caption</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Forms -->
+        <section id="forms">
+            <h2>Forms</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <fieldset>
+                    <legend>Choose your favorite color:</legend>
+                    <label for="color-red">Red</label>
+                    <input type="radio" id="color-red" name="color" value="red">
+                    <label for="color-green">Green</label>
+                    <input type="radio" id="color-green" name="color" value="green">
+                    <label for="color-blue">Blue</label>
+                    <input type="radio" id="color-blue" name="color" value="blue">
+                </fieldset>
+                <br>
+                <label for="vehicle">I have a bike:</label>
+                <input type="checkbox" id="vehicle" name="vehicle" value="bike">
+                <br>
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        
+        <!-- Media Elements -->
+        <section id="media">
+            <h2>Media Elements</h2>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audiofile.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h3>Video</h3>
+            <video controls width="250">
+                <source src="videofile.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <h3>Embed YouTube Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 HTML Capabilities Demonstration</p>
+    </footer>
+</body>
+</html>
